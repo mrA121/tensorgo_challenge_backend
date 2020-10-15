@@ -16,8 +16,7 @@ Note:- Ideally mysql should run into another server container and we should be u
 ## API ENDPOINTS 
 
 
-router.get('',userController.downloadUsers)
-
+##### API Request
 ```
 GET /v1/users?page=21 HTTP/1.1
 ```
@@ -52,7 +51,7 @@ GET /v1/users?page=21 HTTP/1.1
     "count": 20
 }
 ```
-
+##### API Request
 ```
 GET /v1/users/post-data HTTP/1.1
 ```
@@ -65,7 +64,7 @@ This first check till what page number data is present in database then start ma
     "message": "New Data Points Uploaded."
 }
 ```
-
+##### API Request
 ```
 PUT /v1/users/:userId HTTP/1.1
 {
@@ -90,7 +89,7 @@ PUT /v1/users/:userId HTTP/1.1
         "updatedAt": "2020-10-15T04:24:09.185Z"
     }
 }
-
+##### API Request
 ```
 GET /v1/users/download-user-data HTTP/1.1
 ```
