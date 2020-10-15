@@ -1,5 +1,18 @@
 # tensorgo_challenge_backend
 
+Prerequisite- Docker
+
+
+TO execute on local follow the following step:-
+```
+1. Download and cd to the folder
+2. in src/utils/databse change database credentials
+3. docker build --tag gorest:1.0 .
+4. docker run -p 3000:5000 -d gorest:1.0
+```
+
+Note:- Ideally mysql should run into another server container and we should be using docker compose to spin off all the containers and pass dependencies but for the sake of simplicity of the challenge have manually configured database connection. 
+
 ## API ENDPOINTS 
 
 
@@ -77,7 +90,11 @@ PUT /v1/users/:userId HTTP/1.1
         "updatedAt": "2020-10-15T04:24:09.185Z"
     }
 }
+
 ```
 GET /v1/users/download-user-data HTTP/1.1
 ```
 
+```
+return download-user-data.csv
+```
