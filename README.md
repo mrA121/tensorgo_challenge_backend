@@ -89,6 +89,8 @@ PUT /v1/users/:userId HTTP/1.1
         "updatedAt": "2020-10-15T04:24:09.185Z"
     }
 }
+
+```
 ##### API Request
 ```
 GET /v1/users/download-user-data HTTP/1.1
