@@ -13,6 +13,8 @@ TO execute on local follow the following step:-
 
 Note:- Ideally mysql should run into another server container and we should be using docker compose to spin off all the containers and pass dependencies but for the sake of simplicity of the challenge have manually configured database connection. 
 
+Note:- Database Dump and sample download-user-data file added in the folder for reference
+
 ## API ENDPOINTS 
 
 
